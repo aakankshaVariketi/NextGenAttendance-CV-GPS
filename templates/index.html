@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE ENGINEERING COLLEGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}?v=1.1">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-heading">
+                <img src="{{ url_for('static', filename='img/ace_logo.png') }}?v=1.1" alt="ACE Engineering College Logo" class="logo">
+                <h1>ACE Engineering College</h1>
+            </div>
+            <h2>Next-Gen Automated Attendance Management: <br> COMPUTER VISION MEETS GPS</h2>
+        </header>
+        <main class="main-buttons">
+            <button class="button" onclick="takeAttendance()">Take Your Attendance</button>
+            <button class="button secondary" onclick="viewAttendanceSheet()">View Attendance Sheet</button>
+        </main>
+        <!-- <footer>
+            <p>&copy; All rights reserved.</p>
+        </footer> -->
+    </div>
+
+    <script>
+        function takeAttendance() {
+            fetch('/take-attendance')
+                .then(response => response.text())
+                .then(data => alert(data));
+        }
+
+        function viewAttendanceSheet() {
+            window.open('/results/attendence.csv', '_blank');
+        }
+    </script>
+</body>
+</html>

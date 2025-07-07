@@ -1,0 +1,93 @@
+/* static/css/styles.css */
+body {
+    background: linear-gradient(to right, #d4fc79, #96e6a1); /* Light green to soft green gradient */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center; /* Center text alignment */
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all children elements */
+}
+
+.logo-heading {
+    display: flex;
+    align-items: center; /* Align logo and heading vertically */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and heading */
+}
+
+h1 {
+    color: #073da2; /* Dark blue */
+    font-size: 3em; /* Increased font size */
+    margin: 0;
+}
+
+h2 {
+    color: #3174d2; /* Medium blue */
+    font-size: 2em;
+    margin-top: 30px; /* Adjust margin to place it right below h1 */
+    margin-bottom: 30px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    align-items: center; /* Center align buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.button {
+    background-color: #0047ab; /* Medium blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0; /* Adjust margin to center buttons */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #002366; /* Dark blue on hover */
+    transform: scale(1.05);
+}
+
+.button.secondary {
+    background-color: #0047ab; 
+}
+
+.button.secondary:hover {
+    background-color: #002366; /* Darker grey on hover */
+}
+
+/* 
+footer {
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+} */
